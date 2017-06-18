@@ -1,0 +1,129 @@
+@import "bootstrap";
+
+/*
+* GENERIC
+*/
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+* WELCOME PAGE
+*/
+#freshBlendzLogo{
+  width: 30em;
+  height: 30em;
+}
+
+#splashContainer{
+  width: 100%;
+  height: 100vh;
+}
+#row1{
+  height: 100vh;
+}
+#row2{
+  height: 100vh;
+}
+#row3{
+  height: 100vh;
+}
+
+@-webkit-keyframes image_blur{
+  0% {-webkit-filter: blur(3px);}
+  50% {-webkit-filter: blur(1px);}
+  100% {-webkit-filter: blur(0px);}
+}
+@-webkit-keyframes image_opacity{
+  0% {-webkit-filter: opacity(80%);}
+  50% {-webkit-filter: opacity(90%);}
+  100% {-webkit-filter: opacity(100%);}
+}
+
+.fill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+  .fill img{
+    opacity: 0.5;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-filter: blur(3px);
+    filter:blur(3px);
+  }
+  .fill img:hover{
+    -webkit-animation: image_blur 0.4s;
+    filter:blur(0px);
+    -webkit-animation: image_opacity 0.4s;
+    opacity: 1;
+  }
+
+.locationCard{
+  width: 15em;
+  height: 5em;
+  position: absolute;
+  bottom: 500px;
+}
+.card-block{
+  background-color: rgba(255,255,255,0.7);
+  padding: 10px;
+  z-index: 0;
+  text-align: center;
+}
+
+/*
+* LA FITNESS HOME
+*/
+#LApageContainer{
+  background-color: #FDE3A7;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+#laFitnessHomeTitle{
+  text-align: center;
+}
+
+/*
+* GOLD'S GYM HOME
+*/
+#goldsPageContainer{
+  background-color: #ECF0F1;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+#goldsTitle{
+  text-align: center;
+}
+
+/*
+* FOUR SEASONS HOME
+*/
+#fourSeasonsPageContainer{
+  background-color: #C5EFF7;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+#fourSeasonsTitle{
+  text-align: center;
+}

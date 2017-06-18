@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('splash-page');
+  this.route('la-fitness-home');
+  this.route('golds-gym-home');
+  this.route('four-seasons-home');
 });
 
 export default Router;
