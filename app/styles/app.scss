@@ -21,6 +21,35 @@
     transform: translateY(0);
   }
 }
+#topNav{
+  background-color: rgba(255,255,255,0.1);
+}
+
+/*
+* MENU BLOCK
+*/
+.cp-Panel{
+  border-bottom: 0.1px solid black;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 40em;
+}
+.cp-Panel-toggle{
+  color: black;
+  display: block;
+  padding: 1em;
+}
+.cp-Panel-toggle:link{
+  text-decoration: none;
+}
+.cp-Panel-toggle:hover{
+  background-color: whitesmoke;
+}
+.cp-Panel-body-inner{
+  padding: 1em;
+}
 
 /*
 * WELCOME PAGE
@@ -96,9 +125,35 @@
   background-color: #FDE3A7;
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: 94.5vh;
 }
 #laFitnessHomeTitle{
+  text-align: center;
+}
+#menuHeader{
+  margin-left: 1em;
+}
+#menuColLA{
+  margin-bottom: 2em;
+}
+#aboutColLA{
+  margin-left: -30em;
+}
+#reviewColLA{
+  width: 40em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+#photosColLA{
+  margin-bottom: 8em;
+  margin-top: -8em;
+}
+#photosColLA img{
+  width: 30em;
+  height: 30em;
+}
+#footer{
+  margin-top: 0.5em;
   text-align: center;
 }
 

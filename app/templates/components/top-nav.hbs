@@ -1,0 +1,29 @@
+<nav id = "topNav">
+  <div id = "topNav" class="container-fluid">
+    <div id = "topNav" class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav">
+            {{#link-to 'la-fitness-home' tagName="li"}}<a href="">LA Fitness</a>{{/link-to}}
+            {{#link-to 'golds-gym-home' tagName="li"}}<a href="">Gold's Gym</a>{{/link-to}}
+            {{#link-to 'four-seasons-home' tagName="li"}}<a href="">Four Seasons</a>{{/link-to}}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+	<div class="row">
+    <div class = "col-sm-12">
+		    {{outlet}}
+    </div>
+	</div>
+</div>
