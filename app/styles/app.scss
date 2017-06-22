@@ -1,0 +1,218 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+/*
+* GENERAL
+*/
+body{
+  font-family: 'Playfair Display', serif;
+}
+hr{
+  width: 60%;
+}
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul.nav{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(253,227,167,1);
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav li{
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+}
+.nav li a{
+  font-size: 2em;
+  color: black;
+}
+
+.navButton{
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+}
+.navButton span:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.navButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.navButton span:after {
+  //content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.navButton:hover span {
+  padding-left: 25px;
+}
+
+.navButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#backNav:hover span{
+  padding-right: 50px;
+}
+#backNav span:after{
+  content: '\00ab';
+  left: 0;
+  margin-left: -4em;
+}
+
+/*
+* SPLASH PAGE
+*/
+#pageContainer{
+  background: url('images/Logo_forWeb_2.jpg') no-repeat center center;
+  height: 80vh;
+  width: 100%;
+}
+.welcomeButton{
+  font-family: 'Rock Salt';
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #EB974E;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+}
+.welcomeButton span:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.welcomeButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.welcomeButton span:after {
+  margin-left: 1em;
+  margin-right: -0.5em;
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.welcomeButton:hover span {
+  padding-right: 25px;
+}
+
+.welcomeButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*
+* HOME PAGE
+*/
+#photoContainer{
+  background: url('images/Logo_forWeb_2.jpg') no-repeat center center;
+  background-size: 10% 100%;
+  height: 20vh;
+}
+#homepageContainer{
+  height: 80vh;
+  width: 100%;
+  text-align: left;
+}
+#homepageContainer p{
+  font-size: 1.5em;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*
+* MENU PAGE
+*/
+.cp-Panel {
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.cp-Panel-toggle {
+  display: block;
+  padding: 1em;
+}
+.cp-Panel-toggle p{
+  text-align: center;
+  font-size: 2em;
+}
+.cp-Panel-toggle:link {
+  text-decoration: none;
+}
+.cp-Panel-toggle:hover {
+  background-color: whitesmoke;
+}
+.cp-Panel-body-inner {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+.cop-Panel-body p{
+  text-align: center;
+  font-size: 1em;
+}
+#menuPhoto{
+  background: url('images/Logo_forWeb_1.jpg') no-repeat center center;
+  background-size: 350px 350px;
+  height: 350px;
+  animation-delay: 1.2s;
+}

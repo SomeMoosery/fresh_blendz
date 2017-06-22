@@ -1,0 +1,20 @@
+<nav>
+  <div id = "topNav" class="container-fluid">
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav">
+            {{#link-to 'index' tagName='li' class = "navButton" id = "backNav"}}<a href = ""><span>Back</span></a>{{/link-to}}
+            {{#link-to 'home-page' tagName="li" class = "navButton"}}<a href=""><span>Home</span></a>{{/link-to}}
+            {{#link-to 'menu-page' tagName="li" class = "navButton"}}<a href=""><span>Menu</span></a>{{/link-to}}
+            {{#link-to 'about-page' tagName="li" class = "navButton"}}<a href=""><span>About</span></a>{{/link-to}}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+	<div class="row">
+    <div class = "col-sm-12">
+		    {{outlet}}
+    </div>
+	</div>
+</div>
