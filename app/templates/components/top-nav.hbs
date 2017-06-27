@@ -2,10 +2,14 @@
   <div id = "topNav" class="container-fluid">
     <div class="collapse navbar-collapse" id="topNav">
       <ul class="nav navbar-nav">
-            {{#link-to 'index' tagName='li' class = "navButton" id = "backNav"}}<a href = ""><span>Back</span></a>{{/link-to}}
-            {{#link-to 'home-page' tagName="li" class = "navButton"}}<a href=""><span>Home</span></a>{{/link-to}}
-            {{#link-to 'menu-page' tagName="li" class = "navButton"}}<a href=""><span>Menu</span></a>{{/link-to}}
-            {{#link-to 'about-page' tagName="li" class = "navButton"}}<a href=""><span>About</span></a>{{/link-to}}
+            {{#link-to 'index' tagName='li' class = "navButton" id = "backNav"}}<a href = ""><span>Home</span></a>{{/link-to}}
+            {{#link-to 'home-page' tagName="li" }}<a href=""><span>About</span></a>{{/link-to}}
+            {{#link-to 'menu-page' tagName="li" }}<a href=""><span>Menu</span></a>{{/link-to}}
+            {{#link-to 'about-page' tagName="li" }}<a href=""><span>Additional</span></a>{{/link-to}}
+            {{#link-to 'contact-page' tagName="div"}}
+              <p>Contact</p>
+              <img src = "assets/images/Logo_forWeb_1.jpg" style = "width: 3%; height: 3%;margin-top:-0.5em;margin-bottom:-0.6em;"/>
+            {{/link-to}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
